@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Dapto Inc.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+    <link href="css/image-effects.css" rel="stylesheet">
+	
+	   <link href="css/normalize.css" rel="stylesheet">
+		 <link href="css/component.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="css/font-awesome-ie7.css">
+	  
+    <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+	  <script src="js/modernizr.custom.js"></script>
+ 
+  </head>
+
+  <body>
+  <div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1361344087274512";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1361344087274512',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();   
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+   statusChangeCallback(response);
+  if (response.status === 'connected') {
+  console.log(response.authResponse.userID);
+  window.top.location = "https://csinye.github.io/";
+  }
+  });
+}();
+
+</script>
+  
+     <div class="container page-styling">
+    <div class="header-wrapper">
+      <div class="site-name">
+        <h1>DAPTO</h1>
+      </div>
+	 <div class="content">
+ <div class="main-1">
+		<div class="container">
+<div class="login-page">
+			   <div class="account_grid">
+			   <div class="col-md-6 login-left">
+			   <div class="fb-login-button" data-width="250" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true">
+			   </div>
+			  	
+				 <h3>NEW CUSTOMERS</h3>
+				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+				 <a class="acount-btn" href="account.html">Create an Account</a>
+			   </div>
+			   <div class="col-md-6 login-right">
+			  	<h3>REGISTERED CUSTOMERS</h3>
+				<p>If you have an account with us, please log in.</p>
+				<form action="LoginServlet" method="post">
+				  <div>
+					<span>Email Address<label>*</label></span>
+					<input type="text" name="uname"> 
+				  </div>
+				  <div>
+					<span>Password<label>*</label></span>
+					<input type="password" name="pass"> 
+				  </div>
+				  <a class="forgot" href="#">Forgot Your Password?</a>
+				  <input type="submit" value="LoginServlet">
+			    </form>
+			   </div>	
+			   <div class="clearfix"> </div>
+			 </div>
+		   </div>
+		   </div>
+	</div>
+	</div>
+      
+      </div>
+      
+      </div>
+      
+        
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+     <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/AnimOnScroll.js"></script>
+    
+    <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
+    </script>
+
+    
+  </body>
+</html>
