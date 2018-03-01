@@ -6,7 +6,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>FormExample</display-name>
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>com.jwt.servlet.LoginServlet</servlet-class>
+		<servlet-class>LoginServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
