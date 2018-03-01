@@ -13,14 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/LoginServlet")
 
 public class LoginServlet extends HttpServlet {
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String customer_name = request.getParameter("name"); 
-        String email = request.getParameter("email"); 
-        String course = request.getParameter("course"); 
-        String phno = request.getParameter("pno"); 
-        String amount = request.getParameter("amount"); 
-		response.setContentType("text/html");
+	public void doPost(HttpServletRequest req, HttpServletResponse res)
+			throws ServletException, java.io.IOException {
+		String customer_name = req.getParameter("name"); 
+        String email = req.getParameter("email"); 
+        String course = req.getParameter("course"); 
+        String phno = req.getParameter("pno"); 
+        String amount = req.getParameter("amount"); 
+		res.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
 		out.println("<html>");
