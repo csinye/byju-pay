@@ -31,4 +31,22 @@ public class LoginServlet extends HttpServlet {
 		out.println("</body></html>");
 		out.close();
 	}
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse res)
+			throws ServletException, java.io.IOException {
+		String customer_name = req.getParameter("name"); 
+        String email = req.getParameter("email"); 
+        String course = req.getParameter("course"); 
+        String phno = req.getParameter("pno"); 
+        String amount = req.getParameter("amount"); 
+		res.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		out.println("<html>");
+		out.println("<body>");
+		out.println("Hello " + "  " + name + "welcome to my blog");
+		out.println("Your password is : " + "  " + email + "<br>");
+		out.println("</body></html>");
+		out.close();
+	}
 }
