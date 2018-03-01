@@ -5,11 +5,11 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
 
  
 	<servlet>
-		<servlet-name>LoginServletname</servlet-name>
+		<servlet-name>LoginServlet</servlet-name>
 		<servlet-class>LoginServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginServletname</servlet-name>
+		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/LoginServlet</url-pattern>
 	</servlet-mapping>
 	
