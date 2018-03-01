@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
  
-    protected void doPost(HttpServletRequest request,
+    protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
          
         // read form fields
