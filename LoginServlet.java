@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/LoginServlet")
 
 public class LoginServlet extends HttpServlet {
-	public void doPost(HttpServletRequest req, HttpServletResponse res)
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, java.io.IOException {
 		String customer_name = req.getParameter("name"); 
         String email = req.getParameter("email"); 
